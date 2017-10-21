@@ -1,0 +1,246 @@
+body, html {
+    height: 100%;
+    background-color: #DADADA;
+}
+
+.bl-background {
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    height: 700px;
+}
+
+.bl-column-1 {
+    float: left;
+}
+
+.bl-column-2 {
+    float: right;
+}
+
+.bl-anp, .bl-row {
+    background: white;
+    /*border-radius: 5px;*/
+    width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: thin #d4d4d4 solid;
+}
+
+.bl-anp {
+    height: 60px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.bl-row:last-of-type {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.bl-row {
+    height: 50px;
+    display: flex;
+}
+
+.bl-product {
+    flex: 1;
+    margin-right: 100px;
+}
+
+.bl-count {
+    flex: 2;
+}
+
+.bl-bought-and-cross{
+    float: right;
+}
+
+
+button {
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    outline: 0;
+}
+
+.bl-quantity {
+    background-color: #DADADA;
+    padding: 2px 7px;
+    border-radius: 2px;
+    color: dimgray;
+}
+
+.bl-plus, .bl-minus, .bl-cross{
+    width: 30px;
+    height: 27px;
+}
+
+.bl-plus {
+    background: #04a613;
+    border-radius: 50%;
+    box-shadow: 0 3px 0 #048414;
+    font-weight: bold;
+}
+
+.bl-minus {
+    background: #db2828;
+    border-radius: 50%;
+    box-shadow: 0 3px 0 #bf2728;
+    font-weight: bold;
+}
+
+.bl-bought {
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    border: thin #cdcdcd solid;
+    font-size: x-small;
+    font-weight: bold;
+    box-shadow: 0 3px 0 #cdcdcd;
+    color: dimgray;
+    height: 30px;
+}
+
+.bl-cross {
+    background: #db2828;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 #bf2728;
+    font-size: xx-small;
+    font-weight: 900;
+
+}
+
+.bl-anp-product-name,  .bl-anp-button {
+    margin-top: 10px;
+}
+
+/*ALL AVAILABLE SPACE? - it is something with relative and absolute...*/
+.bl-anp-product-name {
+    font-size: smaller;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border: thin #969696 solid;
+    padding-left: 15px;
+    color: #969696;
+    height: 35px;
+    width: 100%;
+}
+
+.bl-anp-button {
+    background-color: #0d71bb;
+    box-shadow: 0 4px 0 #0d4d8b;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px 20px;
+    width: 100px;
+    height: 35px;
+}
+
+.bl-count, .bl-bought-and-cross, .bl-product{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.bl-title-remains {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.bl-does-not-remain-list {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.bl-remains-list, .bl-does-not-remain-list, .bl-title-remains, .bl-title-does-not-remain {
+    width: 300px;
+    /*border-radius: 5px;*/
+    border: thin #d4d4d4 solid;
+    padding-left: 15px;
+    background-color: white;
+}
+
+.bl-title-remains, .bl-title-does-not-remain{
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.bl-remains-list, .bl-does-not-remain-list {
+    height: 30px;
+    /*padding: 1em;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bl-anp-field {
+    display: flex;
+}
+
+
+* {
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+.bl-small-row {
+    background-color: #e8e8e8;
+    border-radius: 2px;
+    margin-bottom: 1px;
+    padding: 7px;
+    color: dimgray;
+    font-size: x-small;
+    font-weight: bold;
+    float:left;
+}
+
+.bl-small-row-number {
+    background-color: darkorange;
+    /*padding: 2px 7px;*/
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: x-small;
+    font-weight: bold;
+    color: white;
+}
+
+
+.bl-plus:hover {
+    background: #049413;
+    box-shadow: 0 3px 0 #047314;
+}
+
+/*.bl-plus:active {*/
+    /*background-color: #047e13;*/
+    /*box-shadow: 0 2px #045614;*/
+    /*transform: translateY(1px);*/
+/*}*/
+
+/*.bl-minus:active, .bl-cross:active {*/
+    /*background: #ad2525;*/
+    /*box-shadow: 0 2px 0 #9c2627;*/
+    /*transform: translateY(1px);*/
+/*}*/
+
+/*.bl-anp-button:active {*/
+    /*background-color: #0d569a;*/
+    /*box-shadow: 0 2px 0 #0d3265;*/
+    /*transform: translateY(2px);*/
+/*}*/
+
+.bl-minus:hover, .bl-cross:hover {
+    background: #cd2828;
+    box-shadow: 0 3px 0 #ab2728;
+}
+
+.bl-anp-button:hover {
+    background-color: #0d69b2;
+    box-shadow: 0 4px 0 #0d4482;
+}
+
+.bl-bought:hover {
+    background-color: #c3c3c3;
+    border: thin #c3c3c3 solid;
+    color: #494949;
+    box-shadow: 0 3px 0 #969696;
+}
+
